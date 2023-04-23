@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Links de CSS-->
+  <link rel="stylesheet" href="./../css/destination.css">
+  <link rel="stylesheet" href="./../css/header.css">
+
+  <title>Space tourism website main</title>
+</head>
+
+<body>
+  <header class="header-container">
+    <img src="./../assets/shared/logo.svg" alt="">
+    <div class="line-header"></div>
+    <img src="./../assets/shared/icon-hamburger.svg" id="menu" alt="">
+    <ul class="ulMenu">
+      <a href="./home.html">
+        <li>
+          <h1><span>00</span> Home</h1>
+        </li>
+      </a>
+      <a href="./destination.html">
+        <li>
+          <h1><span>01</span> Destination</h1>
+        </li>
+      </a>
+
+      <li>
+        <h1><span>02</span> Crew</h1>
+      </li>
+      <li>
+        <h1><span>03</span> Technology</h1>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <h1>01 Pick your destination <span id="destinationName">Moon</span></h1>
+    <section class="destination">
+      <img src="./../assets/destination/image-moon.webp" alt="" id="imgDestination">
+      <div class="destinationRight">
+        <ul>
+          <li>
+            <h1 class="liActive" id="moon">Moon</h1>
+          </li>
+          <li>
+            <h1 id="mars">Mars</h1>
+          </li>
+          <li>
+            <h1 id="europa">Europa</h1>
+          </li>
+          <li>
+            <h1 id="titan">Titan</h1>
+          </li>
+        </ul>
+        <h1 id="title">Moon</h1>
+        <p id="text">Moon See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+          perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and
+          Apollo 11 landing sites</p>
+        <hr>
+        <div class="wraperInfo">
+          <div class="distance">
+            <p>Avg. distance</p>
+            <h1 id="distance">384,400 km</h1>
+          </div>
+  
+          <div class="time">
+            <p>Est. travel time</p>
+            <h1 id="time">3 days</h1>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  <script src="./../js/script.js"></script>
+</body>
+
+</html>

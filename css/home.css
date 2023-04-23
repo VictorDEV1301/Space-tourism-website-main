@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./../assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ulMenu a:nth-of-type(1) {
+  border-bottom: 4px solid #fff;
+}
+
+.text {
+  margin: 0 auto;
+  width: 90%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-weight: normal;
+}
+
+.wraper-text-left,
+.wraper-text-right {
+  max-width: 500px;
+}
+
+.wraper-text-right {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wraper-text-left h1 {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.wraper-text-right h1 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.wraper-text-left span {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: url(./../assets/home/background-home-tablet.jpg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(./../assets/home/background-home-mobile.jpg);
+  }
+
+  .ulMenu a:nth-of-type(1) {
+    border-bottom: 0;
+  }
+
+  .wraper-text-left h1 {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+
+  .wraper-text-left span {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
