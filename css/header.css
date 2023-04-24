@@ -76,16 +76,21 @@ header {
     display: none;
     justify-content: center;
     align-items: start;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 90%;
+    height: 150px;
+    padding: 25px;
+    z-index: 999;
   }
 
   .ulMenu li h1 {
-    font-size: 14px;
+    margin: 5px;
+    font-size: 16px;
     min-height: 0;
     line-height: 0;
     display: flex;
-    gap: 5px;
-    color: #000;
+    gap: 10px;
+    color: #fff;
   }
 
   .ulActive {
