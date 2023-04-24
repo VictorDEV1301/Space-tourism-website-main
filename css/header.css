@@ -74,12 +74,18 @@ header {
 
   .ulMenu {
     display: none;
+    justify-content: center;
+    align-items: start;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .ulMenu li h1 {
-    font-size: 11px;
+    font-size: 14px;
     min-height: 0;
     line-height: 0;
+    display: flex;
+    gap: 5px;
+    color: #000;
   }
 
   .ulActive {
