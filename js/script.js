@@ -33,13 +33,28 @@ const nameImg = document.querySelector('#nameImg');
 function mudaCrew(ocupacao, nome, informacao, imagem) {
   ocupation.innerText = ocupacao;
   name.innerText = nome;
-  info.innerHTML = informacao;
+  info.innerText = informacao;
   nameImg.src = imagem;
 }
 
 function ativaBola(id) {
   const balls = document.querySelectorAll('.ballsContainer div');
   balls.forEach(valor => valor.id === id ? valor.classList.add('ballActive') : valor.classList.remove('ballActive'));
+}
+
+const nave = document.querySelector('#nave');
+const naveInfo = document.querySelector('#naveInfo');
+const naveImg = document.querySelector('#naveImg');
+
+function mudaTec(naveP, naveInfoP, naveImgP){
+  nave.innerText = naveP;
+  naveInfo.innerText = naveInfoP;
+  naveImg.src = naveImgP;
+}
+
+function colocaNumber(id){
+  const numbers = document.querySelectorAll('#tecBalls li');
+  numbers.forEach(valor => valor.id === id ? valor.classList.add('tecBallActive') : valor.classList.remove('tecBallActive'));
 }
 
 document.addEventListener('click', e => {
@@ -99,7 +114,28 @@ document.addEventListener('click', e => {
     './../assets/crew/image-mark-shuttleworth.webp');
     ativaBola(e.target.id);
   }
-})
+
+  if(e.target.id === 'tecBall1'){
+    mudaTec('Space capsule',
+    `A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.`,
+    './../assets/technology/image-space-capsule-portrait.jpg');
+    colocaNumber(e.target.id);
+  }
+
+  if(e.target.id === 'tecBall2'){
+    mudaTec('Spaceport',
+    'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.',
+    './../assets/technology/image-spaceport-portrait.jpg');
+    colocaNumber(e.target.id);
+  }
+
+  if(e.target.id === 'tecBall3'){
+    mudaTec('Launch vehicle',
+    `A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!`,
+    './../assets/technology/image-launch-vehicle-portrait.jpg');
+    colocaNumber(e.target.id);
+  }
+});
 
 
 
